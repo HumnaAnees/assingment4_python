@@ -1,0 +1,137 @@
+# Python3 Program to check whether a
+# given key already exists in a dictionary.
+
+# Function to print sum
+def checkKey(dict, key):
+	
+	if key in dict.keys():
+		print("Present, ", end =" ")
+		print("value =", dict[key])
+	else:
+		print("Not present")
+
+# Driver Code
+dict = {'a': 100, 'b':200, 'c':300}
+
+key = 'b'
+checkKey(dict, key)
+
+key = 'w'
+checkKey(dict, key)
+# Python code to demonstrate
+# checking of element existence
+# using loops and in
+
+# Initializing list
+test_list = [ 1, 6, 3, 5, 3, 4 ]
+
+print("Checking if 4 exists in list ( using loop ) : ")
+
+# Checking if 4 exists in list
+# using loop
+for i in test_list:
+	if(i == 4) :
+		print ("Element Exists")
+
+print("Checking if 4 exists in list ( using in ) : ")
+
+# Checking if 4 exists in list
+# using in
+if (4 in test_list):
+	print ("Element Exists")
+# Let's create a dictionary, the functional way
+
+# Create your dictionary class
+class my_dictionary(dict):
+
+	# __init__ function
+	def __init__(self):
+		self = dict()
+		
+	# Function to add key:value
+	def add(self, key, value):
+		self[key] = value
+
+# Main Function
+dict_obj = my_dictionary()
+
+dict_obj.add(1, 'Geeks')
+dict_obj.add(2, 'forGeeks')
+
+print(dict_obj)
+# Let's create a dictionary, the functional way
+
+# Create your dictionary class
+class my_dictionary(dict):
+
+	# __init__ function
+	def __init__(self):
+		self = dict()
+		
+	# Function to add key:value
+	def add(self, key, value):
+		self[key] = value
+
+# Main Function
+dict_obj = my_dictionary()
+
+dict_obj.add(1, 'Geeks')
+dict_obj.add(2, 'forGeeks')
+
+print(dict_obj)
+# Python3 Program to find sum of
+# all items in a Dictionary
+
+# Function to print sum
+def returnSum(myDict):
+	
+	list = []
+	for i in myDict:
+		list.append(myDict[i])
+	final = sum(list)
+	
+	return final
+
+# Driver Function
+dict = {'a': 100, 'b':200, 'c':300}
+print("Sum :", returnSum(dict))
+# Python program to print
+# duplicates from a list
+# of integers
+def Repeat(x):
+	_size = len(x)
+	repeated = []
+	for i in range(_size):
+		k = i + 1
+		for j in range(k, _size):
+			if x[i] == x[j] and x[i] not in repeated:
+				repeated.append(x[i])
+	return repeated
+
+# Driver Code
+list1 = [10, 20, 30, 20, 20, 30, 40,
+		50, -20, 60, 60, -20, -20]
+print (Repeat(list1))
+	
+# This code is contributed
+# by Sandeep_anand
+# Python3 Program to check whether a
+# given key already exists in a dictionary.
+
+# Function to print sum
+def checkKey(dict, key):
+	
+	if key in dict.keys():
+		print("Present, ", end =" ")
+		print("value =", dict[key])
+	else:
+		print("Not present")
+
+# Driver Code
+dict = {'a': 100, 'b':200, 'c':300}
+
+key = 'b'
+checkKey(dict, key)
+
+key = 'w'
+checkKey(dict, key)
